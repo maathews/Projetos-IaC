@@ -28,24 +28,6 @@ Este comando cria um arquivo chamado Vagrantfile no diretório atual. O Vagrantf
 5. Configurar o Vagrantfile
 Abra o Vagrantfile em um editor de texto. Por padrão, ele está configurado para usar a box hashicorp/bionic64. Você pode ajustar as configurações conforme necessário. Aqui está um exemplo básico de um Vagrantfile configurado:
 
-
-Vagrant.configure("2") do |config|
-  config.vm.box = "hashicorp/bionic64"
-
-  ### Configurações de rede
-  config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "private_network", type: "dhcp"
-
-  ### Configurações de provisionamento
-  config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y apache2
-  SHELL
-
-  ### Configurações de sincronização de pasta
-  config.vm.synced_folder ".", "/vagrant_data"
-
-end
 6. Iniciar a Máquina Virtual
 Com o Vagrantfile configurado, inicie a VM:
 vagrant up
