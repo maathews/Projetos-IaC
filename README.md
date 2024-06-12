@@ -6,5 +6,6 @@ O Vagrant é uma ferramenta para criar e gerenciar ambientes virtuais de desenvo
 
 Esses projetos do Vagrant contêm várias máquinas virtuais pré-configuradas, cada uma com finalidades específicas:
 
-Projeto Nginx: Inclui a criação e configuração de um servidor Nginx, associado a uma pasta sincronizada que permite atualizações dinâmicas de conteúdo.
-Projeto Local: Fornece um script automatizado para a instalação de diversas ferramentas e dependências necessárias para o desenvolvimento local.
+-Projeto Nginx: Inclui a criação e configuração de um servidor Nginx, associado a uma pasta sincronizada que permite atualizações dinâmicas de conteúdo.
+
+-Projeto Local: Fornece um script automatizado para a instalação de diversas ferramentas e dependências necessárias para o desenvolvimento local.
